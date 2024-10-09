@@ -3,7 +3,7 @@ let pics = [];
 
 function preload() {
   for (let i=0; i<63; i++){
-    pics[i] = loadImage(`pictures/pic${i}.jpg`,
+    pics[i] = loadImage(`pic${i}.jpg`,
       // Success callback
       () => {}, 
       // Error callback
