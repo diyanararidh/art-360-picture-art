@@ -15,7 +15,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth - 10, windowHeight - 10);
+  createCanvas(windowWidth, windowHeight);
   
   background(0,0,0);
   let rndInt = Math.floor(Math.random() * 50)
