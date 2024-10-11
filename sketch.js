@@ -67,6 +67,9 @@ class Tilepic {
   
 }
 
+window.setTimeout( function() {
+  window.location.reload();
+}, 30000);
 
 // to make it repeat automaticicaly in the inspect button - use the console 
 //setInterval(function() { 
