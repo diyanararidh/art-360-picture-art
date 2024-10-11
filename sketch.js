@@ -69,7 +69,7 @@ class Tilepic {
 
 window.setTimeout( function() {
   window.location.reload();
-}, 30000);
+}, math.random(20000, 50000);
 
 // to make it repeat automaticicaly in the inspect button - use the console 
 //setInterval(function() { 
