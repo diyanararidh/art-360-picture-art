@@ -1,3 +1,4 @@
+
 let tilepic = [];
 let pics = [];
 
@@ -15,8 +16,9 @@ function preload() {
 }
 
 function setup() {
+  createCanvas(windowWidth - 10, windowHeight - 10);
   createCanvas(windowWidth, windowHeight);
-  
+
   background(0,0,0);
   let rndInt = Math.floor(Math.random() * 50)
   for (let i =0; i < rndInt; i++){
@@ -26,7 +28,7 @@ function setup() {
     let picture = random(pics);
     let t = new Tilepic(x, y, r, picture);
     tilepic.push(t);
-    
+
   }
 }
 
@@ -54,17 +56,17 @@ class Tilepic {
   clicked(px, py) {
     if (px > this.x && px < this.x + this.r && py > this.y && py < this.y + this.r) {
       this.picture = random(pics);
-      
+
       // mkae sure image does not go out of canvas
       this.x = constrain(this.x, 0, width - this.r);
       this.y = constrain(this.y, 0, height - this.r);
   }
   }
-  
+
   show() {
     image(this.picture, this.x, this.y, this.r, this.r)
   }
-  
+
 }
 
 
